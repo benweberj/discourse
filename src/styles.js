@@ -5,36 +5,25 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
   body {
-    background: ${props => props.theme.base};
+    background: linear-gradient(45deg, #0c0d13, #343b42);
     transition: background .5s ease;
     /* padding-bottom: 5vw; */
     height: 100%;
-    // background-image: radial-gradient(#1c202fb0, #0f1321), url(https://images.photowall.com/products/58341/foggy-forest-4.jpg?h=699&q=85);
     background-size: cover;
     background-attachment: fixed;
     font-size: 15px;
 
-    // Pseudo background image for light mode so it can transition
-    // &:after {
-    //   transition: all .25s ease;
-    //   content: "";
-    //   opacity: ${props => props.theme.mode === 'dark' && 0};
-    //   background-image: radial-gradient(#fff7, #fffa), url(https://images.photall.com/products/58341/foggy-forest-4.jpg?h=699&q=85);
-    //   background-size: cover;
-    //   background-attachment: fixed;
-    //   width: 100%;
-    //   height: 100%;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   z-index: -1;
-    // }
+  }
+
+  p { 
+    font-size: 19px;
+    -webkit-font-smoothing: antialiased;
   }
 
   * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', sans-serif;
     box-sizing: border-box;
   }
 
@@ -53,15 +42,15 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 const baseStyles = {
-  primary: '#60b389',
-  accent: '#97cfb3',
+  primary: '#6ca6e2',
+  accent: '#6ca6e2',
 
   darkColor: '#191f33',
-  lightColor: '#eeeeee',
+  lightColor: '#ffffff',
 
-  light: 300,
+  light: 100,
   regular: 400,
-  bold: 800,
+  bold: 900,
   corners: 5,
   cornersSm: 3,
 }

@@ -25,7 +25,7 @@ const Text = styled.p(props => ({
   whiteSpace: props.nowrap && 'nowrap',
 
   fontWeight: props.bold ? props.theme.bold : props.light ? props.theme.light : props.regular ? props.theme.regular : props.inline ? 'inherit' : props.theme.regular,
-  color: props.accent ? props.theme.primary : props.color ? props.color : props.inverse ? props.theme.base : props.theme.complement,
+  color: props.accent ? props.theme.primary : props.color ? props.color : props.inverse ? props.theme.base : props.dull ? '#fffa' : props.bold ? '#fff' : props.theme.complement,
   opacity: props.o ? props.o : 1,
   fontStyle: props.italic && 'italic',
   display: props.inline && 'inline !important',

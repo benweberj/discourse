@@ -34,6 +34,7 @@ const Button_ = styled.button(props => ({
   opacity: props.silent && '.3',
   overflow: 'hidden',
   boxSizing: 'border-box',
+  borderRadius: 999,
 
   '&:hover': {
     // opacity: 1,
@@ -66,15 +67,15 @@ const Button_ = styled.button(props => ({
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    transform: 'scale(.7)',
-    filter: props.inverse && props.theme.mode === 'light' &&  'invert(100%)',
+    transform: 'scale(.5)',
+    filter: 'invert(1)',
   },
 
   '& p': { transition: 'all .25s ease' },
 
   '&:hover': {
     opacity: 1,
-    '&:after': { transform: 'translateY(100%) scale(.7)' },
+    '&:after': { transform: 'translateY(100%) scale(.3)' },
     '&:before': { transform: 'scaleY(1)' },
     '& p': { transform: 'translateY(100%)' }
   }
@@ -95,6 +96,6 @@ export default props => {
   // })(intent)
 
   return (
-    <Button_ {...props} src={require(`../img/intents/${intent}.png`)}><p>{children}</p></Button_>
+    <Button_ {...props} src={require(`../img/intents/${intent}.png`).default}><p>{children}</p></Button_>
   )
 }

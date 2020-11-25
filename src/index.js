@@ -46,11 +46,11 @@ class App extends React.Component {
           <GlobalStyles /> {/* for all global css styles */}
           {/* <Terminal messages={termMessages} theme={theme} />
           <Nav echo={this.echo} theme={theme} /> */}
-          <ThemeToggler
+          {/* <ThemeToggler
             theme={theme}
             toggleMode={this.toggleMode}
             style={{ transform: 'translate(-50%, 10px)', position: 'fixed', left: '50%', top: 0 }}
-          />
+          /> */}
 
           <Discourse {...this.state} />
 

@@ -5,9 +5,11 @@ import Div from './Div'
 import Text from './Text'
 import Img from './Img'
 import Home from '../Home'
+import Imitation from '../Imitation'
+import Valkyrie from '../Valkyrie'
 
 const localStyles = _ => ({
-  
+
 })
 
 const Discourse = props => {
@@ -16,6 +18,9 @@ const Discourse = props => {
   return (<>
     {/* <Text center mt={50} type='h1' bold>Discourse Analysis <Text inline light>| Ben Weber</Text></Text> */}
     <Home {...props} />
+    <Imitation />
+    <Valkyrie />
+    <Img rad={10} src={require(`../img/wordcloud.png`).default} w='100%' block mx='auto' style={{ mixBlendMode: mode === 'light' && 'exclusion'  }} />
 
     {/* <Div justify='evenly' mt={50}>
       <Div col center w='48%'>

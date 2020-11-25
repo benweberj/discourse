@@ -1,9 +1,25 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { throttle } from 'lodash'
+import styled from 'styled-components'
 
 import Text from './components/Text'
 import Div from './components/Div'
+import Button from './components/Button'
+
+const _button = styled.button`
+  transition: all .5s ease;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  padding: 10px 30px;
+  background: none;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+`
 
 const localStyles = _ => ({
   cover: {
@@ -50,17 +66,15 @@ export default withStyles(localStyles)(props => {
   }, 100), []) 
 
   useEffect(_ => {
-    document.onmousemove = barsCB
+    // document.onmousemove = barsCB
   }, [])
   console.log(mags)
   return (
     <>
-      <Div w='100%' h='100vh' flex style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }}>
-        <Div contain center
+      <Div w='100%' h='100vh' flex style={{ position: 'abso.lute', top: 0, left: 0, zIndex: 0 }}>
+        {/* <Div contain center
           h={bar} w={'100vh'}
-          o={Math.abs(40 - mags.left)}
-          // bg={curCover === 'valkyrie' && '#0006'}
-          // maxH={curCover !== 'valkyrie' ? '0' : bar}
+          o={1 - mags.left*.018}
           style={{
             pointerEvents: 'none',
             zIndex: 999,
@@ -76,21 +90,18 @@ export default withStyles(localStyles)(props => {
         <Div contain center
           h={bar} w={'100vh'}
           o={1 - mags.right*.018}
-          // bg={curCover === 'imitation' && '#0006'}
-          // maxH={curCover !== 'imitation' ? '0' : mags.right}
           style={{
             pointerEvents: 'none',
             zIndex: 999,
             position: 'absolute',
             right: 0,
             transform: `rotate(90deg) translateX(100%) translateY(${curCover !== 'imitation' ? -bar : -bar + mags.right + bar/2}px)`,
-            // transform: `rotate(90deg) translateY(${curCover !== 'imitation' ? '0' : '0'}px)`,
             transformOrigin: 'top right',
             // backdropFilter: 'blur(5px)',
           }}
         >
           <Text light upper size={70}>The Imitation Game</Text>
-        </Div>
+        </Div> */}
 
         <Div onMouseOver={_ => setCover('valkyrie')} onMouseLeave={_ => setCover(null)} center className={classes.cover} style={{ backgroundImage: `url('${require('./img/valkyrie.jpg').default}` }}>
           {/* <Text upper light mt='30vh' type='h1'>Valkyrie</Text> */}
@@ -99,9 +110,10 @@ export default withStyles(localStyles)(props => {
           {/* <Text upper light type='h1'>The Imitation Game</Text> */}
         </Div>
         
-        <Div full col center style={{ position: 'absolute', pointerEvents: 'none' }}>
-          <Text upper bold size={65}>Discourse Analysis</Text>
-          <Text center style={{ width: '60%' }} light size={25}>Film Representations of U.S / Germany Relations</Text>
+        <Div col center style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Text nowrap upper bold size={65}>Discourse Analysis</Text>
+          <Text nowrap center light size={25}>Film Representations of German Relations During World War II</Text>
+          <Button mt={20} onClick={e => window.scroll({ behavior: 'smooth', top: h })} intent='down'>Let's go</Button>
         </Div>
       </Div>
     </>
