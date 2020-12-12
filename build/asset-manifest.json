@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/discourse/static/js/main.dec15c16.chunk.js",
+    "main.js.map": "/discourse/static/js/main.dec15c16.chunk.js.map",
+    "runtime-main.js": "/discourse/static/js/runtime-main.448afe27.js",
+    "runtime-main.js.map": "/discourse/static/js/runtime-main.448afe27.js.map",
+    "static/js/2.5dded59f.chunk.js": "/discourse/static/js/2.5dded59f.chunk.js",
+    "static/js/2.5dded59f.chunk.js.map": "/discourse/static/js/2.5dded59f.chunk.js.map",
+    "index.html": "/discourse/index.html",
+    "static/js/2.5dded59f.chunk.js.LICENSE.txt": "/discourse/static/js/2.5dded59f.chunk.js.LICENSE.txt",
+    "static/media/imitation.jpg": "/discourse/static/media/imitation.e2057b0e.jpg",
+    "static/media/valkyrie.jpg": "/discourse/static/media/valkyrie.19b0882c.jpg",
+    "static/media/wordcloud-imitation.png": "/discourse/static/media/wordcloud-imitation.3cb972c2.png",
+    "static/media/wordcloud-valkyrie.png": "/discourse/static/media/wordcloud-valkyrie.1a6b8044.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.448afe27.js",
+    "static/js/2.5dded59f.chunk.js",
+    "static/js/main.dec15c16.chunk.js"
+  ]
+}
