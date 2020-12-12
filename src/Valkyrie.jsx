@@ -19,7 +19,7 @@ export default _ => (
       officers who share his disgust of the direction of the country. The plan that they developed involved taking advantage of Hitler's contingency plan, Operation Walküre (Valkyrie).
       This order would be enacted in the event that Hitler is killed or cut out of power, deploying thousands of reserve army soldiers stationed around the country.
       Stauffenberg's objective was to gain Hitler's trust so he could make changes to the Valkyrie document that would allow him and his team to convince Germany that
-      there was a coup taking shape and that the SS was behind it. Meanwhile, the Stauffenberg's team would use the distraction to quietly put a new government in place.
+      there was a coup taking shape and that the SS was behind it. Meanwhile, Stauffenberg's team would use the distraction to quietly put a new government in place.
     </P>
     <Note>NOTE: Although this was an American-made film, it is essentially a remake of the 2004 German film <b>Stauffenberg</b>, which tells the same story.</Note>
 

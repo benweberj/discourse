@@ -47,6 +47,14 @@ export default _ => (
       The effect of framing the situation like this is that it promotes the utility of using your mind to solve a problem, rather than your
       political and military power.
     </P>
+    <br />
+    <P>
+      England's efforts to race to crack Enigma was very similar to how the Moonrise podcast framed the space race. In both cases, was something that needed to
+      be done that most poeple thought was impossible, and it needed to be done quickly. It's difficult to to compare the importance of each of these races because
+      they both had differnt expected outcomes. In the space race, winning the race meant that the United States gained more prestige and other counties would
+      see them as more powerful and competent. But in the race to crack Enigma, there was no goal of telling the world "Hey look what we did." It was about bringing
+      the war to an end and saving as many lives as they could.
+    </P>
     <br/><br/>
     <P>
       Another imaginary that this film creates is one that emphasizes that women, (more so in the film's time period), although presumed to be

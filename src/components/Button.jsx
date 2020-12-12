@@ -68,7 +68,7 @@ const Button_ = styled.button(props => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     transform: 'scale(.5)',
-    filter: 'invert(1)',
+    filter: !props.inverse && 'invert(1)',
   },
 
   '& p': { transition: 'all .25s ease' },

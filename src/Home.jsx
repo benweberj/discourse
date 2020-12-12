@@ -95,7 +95,7 @@ export default withStyles(localStyles)(props => {
 
         <Div center style={{ position: 'absolute', bottom: 100-h, left: '50%', transform: 'translateX(-50%)' }}>
           <Button mr={20} inverse onClick={_ => setReflection(!reflection)} intent='down'>{reflection ? 'Assignment' : 'Reflection'}</Button>
-          <Button inverse onClick={_ => setShowingSources(!showingSources)} intent='down'>Sources</Button>
+          <Button inverse onClick={_ => setShowingSources(!showingSources)} intent='down'>References</Button>
         </Div>
       </Div>
 
@@ -105,7 +105,7 @@ export default withStyles(localStyles)(props => {
           it isn't my cup of tea, but overall it was a good experience and it was interesting to take a closer look at what messages
           and ideas are being conveyed through sources that might not be immediately obvious. Since this was my first time undertaking
           a project like this, I had no idea where to start and didn't know the scale of what I'd actually be analyzing. Getting your
-          feedback from the draft was extremely helpful since you told me to focus on a few examples and look at them closely, rather
+          feedback from my proposal was extremely helpful since you recommeded that I focus on a few examples and look at them closely, rather
           than finding every example I could and trying to relate them all together.
         </P>
         <br/>
@@ -187,10 +187,11 @@ export default withStyles(localStyles)(props => {
         <Div onClick={_ => setShowingSources(false)} pointer w={15} h={15} style={{ position: 'absolute', top: 10, right: 10, fontFamily: 'sans-serif', color: '#fff', fontWeight: 'bold', fontSize: 20 }} center>
           X
         </Div>
-        <H2i>Sources</H2i>
+        <H2i>References</H2i>
         <Quotei>Week 4: Lecture 1 - Getting to know the State</Quotei>
         <Quotei>Week 4: Lecture 2 - The Nation & Nationalism</Quotei>
         <Quotei>Week 9: Lecture 1 - Sexual Citizenship</Quotei>
+        <Quotei className={classes.link} onClick={_ => window.open('https://www.stitcher.com/podcast/the-washington-post/moonrise/e/64117847', '_blank')}>Moonrise podcast Episode 8: A New Frontier</Quotei>
         <Quotei className={classes.link} onClick={_ => window.open('https://medium.com/sci-illustrate-stories/joan-clarke-4ab1b5285771', '_blank')}>Joan Clarke</Quotei>
         <Quotei className={classes.link} onClick={_ => window.open('https://www.cambridge.org/core/books/nationalism-and-war/role-of-nationalism-in-the-two-world-wars/05C954AB1231D44B9D7DF998C85C112F', '_blank')}>Nationalism and War</Quotei>
       </Div>
