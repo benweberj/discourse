@@ -44,7 +44,7 @@ const _Div = styled.div(props => ({
   maxHeight: props.maxH && props.maxH,
   background: props.glass ? '#5b9bea11' : props.bg && props.bg,
   backgroundSize: props.cover && 'cover',
-  overflow: props.contain && 'hidden',
+  overflow: props.contain ? 'hidden' : props.scroll && 'scroll',
   pointerEvents: props.disabled && 'none',
   opacity: props.o ? `${props.o} !important` : props.disabled && .4, 
   cursor: props.pointer && 'pointer',

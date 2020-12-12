@@ -18,9 +18,9 @@ const Discourse = props => {
   return (<>
     {/* <Text center mt={50} type='h1' bold>Discourse Analysis <Text inline light>| Ben Weber</Text></Text> */}
     <Home {...props} />
-    <Imitation />
+    {/* <Imitation />
     <Valkyrie />
-    <Img rad={10} src={require(`../img/wordcloud.png`).default} w='100%' block mx='auto' style={{ mixBlendMode: mode === 'light' && 'exclusion'  }} />
+    <Img rad={10} src={require(`../img/wordcloud.png`).default} w='100%' block mx='auto' style={{ mixBlendMode: mode === 'light' && 'exclusion'  }} /> */}
 
     {/* <Div justify='evenly' mt={50}>
       <Div col center w='48%'>
