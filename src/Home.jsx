@@ -38,7 +38,7 @@ const P = props => <Text {...props}>{props.children}</Text>
 const H1 = props => <Text {...props} inverse size={80}>{props.children}</Text>
 const H2 = props => <Text {...props} inverse size={40} mt={40} mb={10}>{props.children}</Text>
 const H3 = props => <Text {...props} inverse size={25}>{props.children}</Text>
-const Quote = props => <Text {...props} inverse italic ml={30} size={25}>{props.children}</Text>
+const Quote = props => <Text {...props} inverse italic ml={30} size={25} mt={20}>{props.children}</Text>
 const Note = props => <Text {...props} size={15} mt={10} inverse italic o={.5}>{props.children}</Text>
 
 export default withStyles(localStyles)(props => {
@@ -85,7 +85,7 @@ export default withStyles(localStyles)(props => {
       </Div>
       {side === 'germany' && (
         <Div center h='100vh' w={30} bg='#0002' onClick={_ => setSide('neutral')} className={classes.toNeutral} style={{ right: 0 }}>
-          <Img w={18} src={require('./img/intents/down.png').default} style={{ transform: 'rotate(-90deg)' }} />
+          <Img inverse w={18} src={require('./img/intents/down.png')} style={{ transform: 'rotate(-90deg)' }} />
         </Div>
       )}
     </Div>
@@ -94,7 +94,7 @@ export default withStyles(localStyles)(props => {
   const UK = (
     <Div flex scroll style={hiddenStyles('uk')}>
       {side === 'uk' && <Div center h='100%' w={30} bg='#0002' onClick={_ => setSide('neutral')} className={classes.toNeutral} style={{ left: 0 }}>
-        <Img w={18} src={require('./img/intents/down.png').default} style={{ transform: 'rotate(90deg)' }} />
+        <Img inverse w={18} src={require('./img/intents/down.png')} style={{ transform: 'rotate(90deg)' }} />
       </Div>}
       <Div full p={100}>
         <Imitation />
@@ -109,13 +109,13 @@ export default withStyles(localStyles)(props => {
           onMouseOver={_ => setCover('valkyrie')}
           onMouseLeave={_ => setCover(null)}
           className={classes.cover}
-          style={{ backgroundImage: `url('${require('./img/valkyrie.jpg').default}` }}
+          style={{ backgroundImage: `url('${require('./img/valkyrie.jpg')}` }}
         />
         <Div
           onMouseOver={_ => setCover('imitation')}
           onMouseLeave={_ => setCover(null)}
           className={classes.cover} 
-          style={{ backgroundImage: `url('${require('./img/imitation.jpg').default}` }}
+          style={{ backgroundImage: `url('${require('./img/imitation.jpg')}` }}
         />
         <Div col center style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}>
           <Text nowrap upper bold size={65}>Discourse Analysis</Text>

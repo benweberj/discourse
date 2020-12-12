@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
   html {
     height: 100%;
+    overflow: scroll;
   }
   body {
     background: linear-gradient(45deg, #0c0d13, #343b42);
@@ -12,7 +13,12 @@ export const GlobalStyles = createGlobalStyle`
     background-size: cover;
     background-attachment: fixed;
     font-size: 15px;
+  }
 
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
   }
 
   p { 

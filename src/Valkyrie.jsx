@@ -6,7 +6,7 @@ const P = props => <Text {...props} inverse>{props.children}</Text>
 const H1 = props => <Text {...props} inverse size={80}>{props.children}</Text>
 const H2 = props => <Text {...props} inverse size={40} mt={40} mb={10}>{props.children}</Text>
 const H3 = props => <Text {...props} inverse size={25}>{props.children}</Text>
-const Quote = props => <Text {...props} inverse italic ml={30} size={25}>{props.children}</Text>
+const Quote = props => <Text {...props} inverse italic ml={30} size={25} mt={20}>{props.children}</Text>
 const Note = props => <Text {...props} size={15} mt={10} inverse italic o={.5}>{props.children}</Text>
 
 export default _ => (
@@ -63,6 +63,6 @@ export default _ => (
       I thought it would be intersing to see the frequency in which certain words appear in the film, so here is a wordcloud generated from the movie's
       script, with the more common words such as "the" and "to" filtered out.
     </P>
-    <Img rad={10} w={'70vw'} src={require('./img/wordcloud-valkyrie.png').default} />
+    <Img rad={10} w={'70vw'} src={require('./img/wordcloud-valkyrie.png')} />
   </>
 )
